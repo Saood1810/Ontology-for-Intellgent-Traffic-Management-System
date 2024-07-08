@@ -1,0 +1,3868 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY IntelligentTrafficManagement "http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement/"
+     xml:base="http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:IntelligentTrafficManagement="http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#activatedBy -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;activatedBy">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Automated_Law_Enforcement"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Automatic_Emergency_Braking"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Collision"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Lane_Centering_System"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Lane_Departure_Warning_System"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Speed_Limit_Enforcement"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Speeding_Vehicle"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Traffic_Observation_Camera"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#adjusts -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;adjusts">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Adaptive_Traffic_Signal_Control_System"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Traffic_Light"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#analyses -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;analyses">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Camera"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Traffic_Data"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Traffic_Data_Analytic"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Traffic_Flow"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Traffic_Flow_Analyser"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Traffic_Pattern"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Traffic_Pattern_Analysis"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Video_Footage"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#appliedTo -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;appliedTo">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Emission_Control_Technology"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Vehicle"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#assigns -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;assigns">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Dynamic_Lane_Assistant"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Lane"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#assistsIn -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;assistsIn">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Automatic_Emergency_Braking"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Collision_Prediction"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Lane-Keeping_Assistance"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Vehicle"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#communicates -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;communicates">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Automatic_Emergency_Braking"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Central_Control_Centre"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Collision"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Collision_Prediction"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Light_Detection_and_Ranging_Sensor"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Radio_Frequency_Identification_Reader"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Speeding_Vehicle"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Tollgate_System"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Traffic_Condition"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#contains -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;contains">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Parking_Lot"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Parking_spot"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#coordinates -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;coordinates">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Emergency_Response"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Emergency_Response_Managment_System"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Traffic_Flow"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Traffic_Management_Controller"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#debits -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;debits">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Bank_Account"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Tollgate_System"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#detectedBy -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;detectedBy">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Collision"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Collision_Detection"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Pedestrian"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Pedestrian_Detection_System"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Speed_Camera_Detector"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Speeding_Vehicle"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Traffic_Condition"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Traffic_Observation_Camera"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Vehicle_Proximity"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Vehicle_Proximity_Detection"/>
+        <owl:inverseOf rdf:resource="&IntelligentTrafficManagement;detects"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#detects -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;detects">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Collision"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Collision_Warning_System"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#displays -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;displays">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Dynamic_Information"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Intelligent_Road_Sign"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#emits -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;emits">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Frequency"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Radio_Frequency_Identification_Tag"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#equipped -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;equipped">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Dash_Camera"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Highway"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Traffic_Observation_Camera"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Vehicle"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#exchanges -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;exchanges">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Data"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Infrastructure"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Vehicle-to-Infrastructure_Communication"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#from -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;from">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Radio_Frequency_Identification_Reader"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Radio_Frequency_Identification_Tag"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#givesPriorityTo -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;givesPriorityTo">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Priority-Based_Traffic_Control"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Traffic"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#has -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;has">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Licence_Plate"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Vehicle"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Vehicle_Identification_Number"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#hasAccess -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;hasAccess">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Traffic_Control_Centre"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Traffic_Observation_Camera"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#identifies -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;identifies">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Automated_Law_Enforcement"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Pedestrian"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Pedestrian_Algorithm"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Traffic_Sign_Detection_Algorithm"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Traffic_Violation"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Traffic_sign"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Vehicle"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Vehicle_Detection_Algorithm"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#impactOn -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;impactOn">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Collision"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Traffic_Condition"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#integratesWith -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;integratesWith">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Grid_System"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Multi-Modal_Transportation_Integration"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Smart_Grid_Integration"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Transport_Mode"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#isApplicationOf -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;isApplicationOf">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Adaptive_Traffic_Signal_Control_System"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Dynamic_Message_Sign"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Electronic_Toll_Collection"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Emergency_Vehicle_Preemption"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Freight_Management_System"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Highway_Data_Collection"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Intelligent_Transportation_System"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Traffic_Management_System"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Transit_Signal_Priority"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Traveler_Information_Service"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Vehicle_Data_Collection"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#isIntergratedInto -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;isIntergratedInto">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Intelligent_Transportation_System"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Roadway_Asset_Management_System"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#isUsedBy -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;isUsedBy">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Object_Detection_Algorithm"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Traffic_Sign_Detection_Algorithm"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Vehicle_Detection_Algorithm"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Video_Analysis_Software"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#manages -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;manages">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Pedestrian_Crosswalk"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Pedestrian_Crosswalk_Management"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#mayLeadTo -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;mayLeadTo">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Automatic_Emergency_Braking"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Speeding_Vehicle"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Traffic_Condition"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Vehicle"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Vehicle_Breakdown"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Vehicle_Breakdown"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#monitors -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;monitors">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Flood"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Flood_Monitoring_Device"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;System_Supervisor"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Traffic_Control_Centre"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#notifies -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;notifies">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Database"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Driver"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#obtainedBy -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;obtainedBy">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Traffic_Condition"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Video_Analysis_Software"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#optimises -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;optimises">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Traffic_Flow"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Traffic_Flow_Optimisation"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#owns -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;owns">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Bank_Account"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Driver"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#parkIn -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;parkIn">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Parking_spot"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Vehicle"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#payFor -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;payFor">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Driver"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Tolling_Fine"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#placedIn -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;placedIn">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Radio_Frequency_Identification_Tag"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Vehicle"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#positioningOn -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;positioningOn">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Board_Unit"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Electronic_Road_Pricing_System"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Global_Navigation_Satellite_System"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#predicts -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;predicts">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Collision"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Collision_Prediction"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Congestion"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Environmental_Sensor"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Pollution_Dispersion_Modelling"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Pollution_Hotspot_Detection"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Traffic_Congestion_Prediction"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Weather_Condition"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#process -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;process"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#produces -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;produces">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Global_Positioning_System_Device"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Global_Positioning_System_Location_Data"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Pneumatic_Pressure_Data"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Pneumatic_Road_Tube"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Positioning_System_Device"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Traffic_Data"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Traffic_Observation_Camera"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Traffic_Sensor"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Video_Camera"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Video_Footage"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#raisesFor -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;raisesFor">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Tollgate"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Vehicle"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#reads -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;reads">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Frequency"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Radio_Frequency_Identification_Reader"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#receives -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;receives">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Driver"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Notification"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Parking_Ticket"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#records -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;records">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Camera"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Dash_Camera"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Laser"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Radar"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Traffic_Observation_Camera"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Vehicle_State_Data"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Video_Footage"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#represents -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;represents">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Traffic_Flow_Characteristics"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Traffic_Pattern"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#respondsTo -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;respondsTo">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Traffic_Incident"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Traffic_Incident_Management"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#scans -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;scans">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Auto_Number_Plate_Recognition_System"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Licence_Plate"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Light_Detection_and_Ranging_Sensor"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Parking_spot"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#sends -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;sends">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Data"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Global_Navigation_Satellite_System"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Pedestrian-to-Infrastructure_Communication"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Satellite"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Signal"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Smartphone"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Traffic_Monitoring_Unit"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#showsAvailable -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;showsAvailable">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Display_Panel"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Parking_spot"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#storedIn -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;storedIn">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Data_Warehouse"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Traffic_Data"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#studies -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;studies">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Traffic_Condition"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Traffic_Flow_data"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#synchronises -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;synchronises">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Traffic_Light"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Traffic_Signal_Synchronisation"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#to -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;to">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Central_Control_Centre"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Global_Navigation_Satellite_System"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Infrastructure"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Pedestrian-to-Infrastructure_Communication"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Satellite"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Satellite"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Smartphone"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Smartphone"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Traffic_Management_Controller"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Traffic_Monitoring_Unit"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#tows -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;tows">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Towing_Service"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Vehicle"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#tracks -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;tracks">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Global_Navigation_Satellite_System"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Vehicle"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#updates -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;updates">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Central_Control_Centre"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Central_Control_Unit"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Database"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Display_Panel"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Traffic_Control_Centre"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#uses -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;uses">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Auto_Number_Plate_Recognition_System"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Camera"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Cell_Tower"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Database"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Driver"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Electronic_Road_Pricing_System"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Global_Navigation_Satellite_System"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Parking_Meter"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Traffic_Control_Centre"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Traffic_Lane"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Vehicle"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#utilises -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;utilises">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Air_Quality_Prediction"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Bus_Routing"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Cargo_Transportation"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Collision_Detection"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Collision_Prediction_Algorithm"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Delivery_Service"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;E-commerce"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Emergency_Management_System"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Emergency_Response"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Emission_Monitoring"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Environmental_Sensor"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Field_Service_Management"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Freight_Management_System"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Healthcare_Service"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Historical_Data"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Intelligent_Traffic_Management"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Intelligent_Transportation_System"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Intelligent_Transportation_System"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Lane_Centering_System"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Lane_Centering_System"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Lane_Departure_Warning_System"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Logistic_Service"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Medical_Service"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Pollution_Dispersion_Modelling"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Pollution_Hotspot_Detection"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Public_Transportation"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Public_Transportation_Analytic"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Public_Transportation_Analytic"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Real_Time_Data"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Recycling_Collection"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Ride-Sharing"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Road_Weather_Information_System"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Route_Optimisation_Algorithm"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Route_Optimization_System"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Taxi_Service"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Traffic_Light"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Traffic_Management_System"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Traffic_Sensor"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Traffic_Sign_Detection_Algorithm"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Transportation_Planning_Tool"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Transportation_Planning_Tool"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Vehicle_Detection_Algorithm"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Vehicle_Proximity"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Vehicle_Proximity_Detection"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Video_Analysis_Software"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Video_Footage"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Waste_Collection"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#with -->
+
+    <owl:ObjectProperty rdf:about="&IntelligentTrafficManagement;with">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&IntelligentTrafficManagement;Infrastructure"/>
+        <rdfs:domain rdf:resource="&IntelligentTrafficManagement;Vehicle-to-Infrastructure_Communication"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Acoustic_Sensor -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Acoustic_Sensor">
+        <rdfs:subClassOf rdf:resource="&IntelligentTrafficManagement;Traffic_Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Adaptive_Traffic_Signal_Control_System -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Adaptive_Traffic_Signal_Control_System">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;adjusts"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Traffic_Light"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;isApplicationOf"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Intelligent_Transportation_System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Advanced_Traffic_Management_System -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Advanced_Traffic_Management_System">
+        <rdfs:subClassOf rdf:resource="&IntelligentTrafficManagement;Intelligent_Transportation_System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Air_Quality_Prediction -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Air_Quality_Prediction">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;utilises"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Pollution_Dispersion_Modelling"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Ambulance_Dispatch_System -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Ambulance_Dispatch_System"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Auto_Number_Plate_Recognition_System -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Auto_Number_Plate_Recognition_System">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;uses"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Camera"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;isUsedBy"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Video_Analysis_Software"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;scans"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Licence_Plate"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Automated_Law_Enforcement -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Automated_Law_Enforcement">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;identifies"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Traffic_Violation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;activatedBy"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Traffic_Observation_Camera"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Automatic_Emergency_Braking -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Automatic_Emergency_Braking">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;communicates"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Collision"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;activatedBy"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Collision"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Bank_Account -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Bank_Account"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Board_Unit -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Board_Unit"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Bus_Routing -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Bus_Routing">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;utilises"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Route_Optimization_System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Bus_Station -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Bus_Station"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Camera -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Camera">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;records"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Video_Footage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;analyses"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Video_Footage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Cargo_Transportation -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Cargo_Transportation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;utilises"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Route_Optimization_System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Cell_Tower -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Cell_Tower"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Central_Control_Centre -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Central_Control_Centre">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;updates"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Database"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Central_Control_Unit -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Central_Control_Unit">
+        <rdfs:subClassOf rdf:resource="&IntelligentTrafficManagement;Processing_Unit"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;updates"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Display_Panel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Collision -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Collision">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;detectedBy"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Collision_Detection"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;impactOn"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Traffic_Condition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Collision_Detection -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Collision_Detection">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;utilises"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Lane_Centering_System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;utilises"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Collision_Prediction_Algorithm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Collision_Prediction -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Collision_Prediction">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;communicates"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Traffic_Condition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;communicates"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Speeding_Vehicle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;assistsIn"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Automatic_Emergency_Braking"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;predicts"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Collision"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Collision_Prediction_Algorithm -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Collision_Prediction_Algorithm"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Collision_Warning_System -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Collision_Warning_System">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;detects"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Collision"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Congestion -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Congestion"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Dash_Camera -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Dash_Camera">
+        <rdfs:subClassOf rdf:resource="&IntelligentTrafficManagement;Camera"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;records"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Video_Footage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Data -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Data"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Data_Processing_Tool -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Data_Processing_Tool">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;process"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Vehicle_State_Data"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Data_Warehouse -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Data_Warehouse"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Database -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Database">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;notifies"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Driver"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;uses"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Cell_Tower"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Delivery_Service -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Delivery_Service">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;utilises"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Route_Optimization_System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Detection_System -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Detection_System"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Digital_Billboard -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Digital_Billboard"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Display_Panel -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Display_Panel">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;showsAvailable"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Parking_spot"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Driver -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Driver">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;receives"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Parking_Ticket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;owns"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Bank_Account"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;payFor"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Tolling_Fine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;uses"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Parking_Meter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;receives"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Notification"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Dynamic_Information -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Dynamic_Information"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Dynamic_Lane_Assistant -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Dynamic_Lane_Assistant">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;assigns"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Lane"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Dynamic_Message_Sign -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Dynamic_Message_Sign">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;isApplicationOf"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Intelligent_Transportation_System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Dynamic_Routing_Algorithm -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Dynamic_Routing_Algorithm"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#E-commerce -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;E-commerce">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;utilises"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Route_Optimization_System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Electronic_Road_Pricing_System -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Electronic_Road_Pricing_System">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&IntelligentTrafficManagement;positioningOn"/>
+                        <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Board_Unit"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&IntelligentTrafficManagement;uses"/>
+                        <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Global_Navigation_Satellite_System"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Electronic_Toll_Collection -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Electronic_Toll_Collection">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;isApplicationOf"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Intelligent_Transportation_System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Emergency_Management_System -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Emergency_Management_System"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Emergency_Response -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Emergency_Response">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;utilises"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Route_Optimization_System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Emergency_Response_Managment_System -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Emergency_Response_Managment_System">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;coordinates"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Emergency_Response"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Emergency_Vehicle_Preemption -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Emergency_Vehicle_Preemption">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;isApplicationOf"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Intelligent_Transportation_System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Emission_Control_Technology -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Emission_Control_Technology">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;appliedTo"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Vehicle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Emission_Monitoring -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Emission_Monitoring">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;utilises"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Environmental_Sensor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Environmental_Sensor -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Environmental_Sensor">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;predicts"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Weather_Condition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Exact_Algorithm -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Exact_Algorithm"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Field_Service_Management -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Field_Service_Management">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;utilises"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Route_Optimization_System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Flood -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Flood"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Flood_Monitoring_Device -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Flood_Monitoring_Device">
+        <rdfs:subClassOf rdf:resource="&IntelligentTrafficManagement;Detection_System"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;monitors"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Flood"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Freight_Management_System -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Freight_Management_System">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;isApplicationOf"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Intelligent_Transportation_System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Freight_Transportation -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Freight_Transportation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;utilises"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Route_Optimization_System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Frequency -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Frequency"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Geospatial_Analysis_Tool -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Geospatial_Analysis_Tool"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Global_Navigation_Satellite_System -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Global_Navigation_Satellite_System">
+        <rdfs:subClassOf rdf:resource="&IntelligentTrafficManagement;Tracking_Unit"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;tracks"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Vehicle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&IntelligentTrafficManagement;sends"/>
+                        <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Signal"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&IntelligentTrafficManagement;to"/>
+                        <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Central_Control_Centre"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Global_Positioning_System_Device -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Global_Positioning_System_Device">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;produces"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Global_Positioning_System_Location_Data"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Global_Positioning_System_Location_Data -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Global_Positioning_System_Location_Data"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Grid_System -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Grid_System"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Healthcare_Service -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Healthcare_Service">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;utilises"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Route_Optimization_System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Heuristic_Algorithm -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Heuristic_Algorithm"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Highway -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Highway">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;equipped"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Traffic_Observation_Camera"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Highway_Data_Collection -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Highway_Data_Collection">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;isApplicationOf"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Intelligent_Transportation_System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Historical_Data -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Historical_Data"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Hybrid_Algorithm -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Hybrid_Algorithm"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Ice_Detection_System -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Ice_Detection_System">
+        <rdfs:subClassOf rdf:resource="&IntelligentTrafficManagement;Detection_System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Incident_Management_System -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Incident_Management_System">
+        <rdfs:subClassOf rdf:resource="&IntelligentTrafficManagement;Intelligent_Transportation_System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Induction_Circuit -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Induction_Circuit">
+        <rdfs:subClassOf rdf:resource="&IntelligentTrafficManagement;Traffic_Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Infrared_Sensor -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Infrared_Sensor">
+        <rdfs:subClassOf rdf:resource="&IntelligentTrafficManagement;Traffic_Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Infrastructure -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Infrastructure"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Intelligent_Intersection_Management -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Intelligent_Intersection_Management"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Intelligent_Road_Sign -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Intelligent_Road_Sign">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;displays"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Dynamic_Information"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Intelligent_Traffic_Management -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Intelligent_Traffic_Management">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;utilises"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Public_Transportation_Analytic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;utilises"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Transportation_Planning_Tool"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;utilises"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Route_Optimization_System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;utilises"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Intelligent_Transportation_System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;utilises"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Video_Analysis_Software"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Intelligent_Transportation_System -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Intelligent_Transportation_System">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;utilises"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Historical_Data"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;utilises"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Emergency_Management_System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;utilises"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Real_Time_Data"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;utilises"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Road_Weather_Information_System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Intersection -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Intersection"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Intersection_Activity -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Intersection_Activity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Intersection_Monitoring_System -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Intersection_Monitoring_System">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;monitors"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Intersection"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Lane -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Lane"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Lane-Keeping_Assistance -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Lane-Keeping_Assistance">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;assistsIn"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Vehicle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Lane_Centering_System -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Lane_Centering_System">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;utilises"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Vehicle_Proximity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Lane_Departure_Warning_System -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Lane_Departure_Warning_System">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;utilises"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Vehicle_Proximity_Detection"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;activatedBy"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Lane_Centering_System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Laser -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Laser">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;records"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Vehicle_State_Data"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Laser_Sensor -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Laser_Sensor">
+        <rdfs:subClassOf rdf:resource="&IntelligentTrafficManagement;Traffic_Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Last-Mile_Delivery -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Last-Mile_Delivery"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Licence_Plate -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Licence_Plate"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Light_Detection_and_Ranging_Sensor -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Light_Detection_and_Ranging_Sensor">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;communicates"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Central_Control_Centre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;scans"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Parking_spot"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Logistic_Service -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Logistic_Service">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;utilises"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Route_Optimization_System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Medical_Service -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Medical_Service">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;utilises"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Route_Optimization_System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Metaheuristic_Algorithm -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Metaheuristic_Algorithm"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Microclimate_Sensor -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Microclimate_Sensor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Multi-Modal_Transportation_Integration -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Multi-Modal_Transportation_Integration">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;integratesWith"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Transport_Mode"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Notification -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Notification">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;notifies"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Driver"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Number_Plate -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Number_Plate"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Object_Detection_Algorithm -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Object_Detection_Algorithm">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;isUsedBy"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Video_Analysis_Software"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#On-Road_Sensor -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;On-Road_Sensor">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;monitors"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Road_Condition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Parking_Lot -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Parking_Lot">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;contains"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Parking_spot"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Parking_Meter -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Parking_Meter"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Parking_Ticket -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Parking_Ticket"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Parking_spot -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Parking_spot"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Pedestrian -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Pedestrian">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;detectedBy"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Pedestrian_Detection_System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Pedestrian-to-Infrastructure_Communication -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Pedestrian-to-Infrastructure_Communication">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&IntelligentTrafficManagement;sends"/>
+                        <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Data"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&IntelligentTrafficManagement;to"/>
+                        <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Infrastructure"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Pedestrian_Algorithm -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Pedestrian_Algorithm">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;identifies"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Pedestrian"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Pedestrian_Crossing -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Pedestrian_Crossing"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Pedestrian_Crosswalk -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Pedestrian_Crosswalk"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Pedestrian_Crosswalk_Management -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Pedestrian_Crosswalk_Management">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;manages"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Pedestrian_Crosswalk"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Pedestrian_Detection_System -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Pedestrian_Detection_System"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Pneumatic_Pressure_Data -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Pneumatic_Pressure_Data"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Pneumatic_Road_Tube -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Pneumatic_Road_Tube">
+        <rdfs:subClassOf rdf:resource="&IntelligentTrafficManagement;Traffic_Sensor"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;produces"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Pneumatic_Pressure_Data"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Police_Dispatch_System -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Police_Dispatch_System"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Pollution_Dispersion_Modelling -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Pollution_Dispersion_Modelling">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;predicts"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Pollution_Hotspot_Detection"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Pollution_Hotspot_Detection -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Pollution_Hotspot_Detection">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;utilises"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Pollution_Dispersion_Modelling"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Positioning_System_Device -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Positioning_System_Device">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;produces"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Traffic_Data"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Priority-Based_Traffic_Control -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Priority-Based_Traffic_Control">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;givesPriorityTo"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Traffic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Processing_Unit -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Processing_Unit"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Public_Transportation -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Public_Transportation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;utilises"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Route_Optimization_System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Public_Transportation_Analytic -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Public_Transportation_Analytic">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;utilises"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Real_Time_Data"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;utilises"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Historical_Data"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Radar -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Radar">
+        <rdfs:subClassOf rdf:resource="&IntelligentTrafficManagement;Traffic_Sensor"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;records"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Vehicle_State_Data"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Radio_Frequency_Identification_Reader -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Radio_Frequency_Identification_Reader">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&IntelligentTrafficManagement;from"/>
+                        <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Radio_Frequency_Identification_Tag"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&IntelligentTrafficManagement;reads"/>
+                        <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Frequency"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;communicates"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Tollgate"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Radio_Frequency_Identification_Tag -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Radio_Frequency_Identification_Tag">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;placedIn"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Vehicle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;emits"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Frequency"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Real-time_Data_Streaming_Tool -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Real-time_Data_Streaming_Tool"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Real-time_Routing_Algorithm -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Real-time_Routing_Algorithm"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Real_Time_Data -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Real_Time_Data"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Recycling_Collection -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Recycling_Collection">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;utilises"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Route_Optimization_System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Response_Vehicle -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Response_Vehicle"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Ride-Sharing -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Ride-Sharing">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;utilises"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Route_Optimization_System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Road_Condition -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Road_Condition"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Road_Surface_Marking -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Road_Surface_Marking"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Road_Weather_Information_System -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Road_Weather_Information_System"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Roadway_Asset_Management_System -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Roadway_Asset_Management_System">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;isIntergratedInto"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Intelligent_Transportation_System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Route_Optimisation_Algorithm -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Route_Optimisation_Algorithm"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Route_Optimization_System -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Route_Optimization_System">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;utilises"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Historical_Data"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;utilises"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Route_Optimisation_Algorithm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;utilises"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Real_Time_Data"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Satellite -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Satellite">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&IntelligentTrafficManagement;sends"/>
+                        <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Signal"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&IntelligentTrafficManagement;to"/>
+                        <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Smartphone"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Signal -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Signal"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Smart_Grid_Integration -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Smart_Grid_Integration">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;integratesWith"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Grid_System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Smartphone -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Smartphone">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&IntelligentTrafficManagement;sends"/>
+                        <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Data"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&IntelligentTrafficManagement;to"/>
+                        <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Satellite"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Speed_Camera_Detector -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Speed_Camera_Detector"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Speed_Limit_Enforcement -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Speed_Limit_Enforcement">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;activatedBy"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Speeding_Vehicle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Speeding_Vehicle -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Speeding_Vehicle">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;mayLeadTo"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Automatic_Emergency_Braking"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;detectedBy"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Speed_Camera_Detector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;mayLeadTo"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Collision"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Storm_Detection_System -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Storm_Detection_System">
+        <rdfs:subClassOf rdf:resource="&IntelligentTrafficManagement;Detection_System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#System -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;System"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#System_Supervisor -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;System_Supervisor">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;monitors"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Traffic_Control_Centre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Taxi_Service -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Taxi_Service">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;utilises"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Route_Optimization_System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Tollgate -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Tollgate">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;raisesFor"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Vehicle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Tollgate_System -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Tollgate_System">
+        <rdfs:subClassOf rdf:resource="&IntelligentTrafficManagement;System"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;debits"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Bank_Account"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Tolling_Fine -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Tolling_Fine"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Towing_Service -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Towing_Service">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;tows"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Vehicle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Tracking_Unit -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Tracking_Unit"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Traffic -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Traffic"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Traffic_Condition -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Traffic_Condition">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;detectedBy"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Traffic_Observation_Camera"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;obtainedBy"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Video_Analysis_Software"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Traffic_Congestion_Prediction -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Traffic_Congestion_Prediction">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;predicts"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Congestion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Traffic_Control_Centre -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Traffic_Control_Centre">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;uses"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Cell_Tower"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;updates"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Database"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;hasAccess"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Traffic_Observation_Camera"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Traffic_Data -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Traffic_Data">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;storedIn"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Data_Warehouse"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Traffic_Data_Analytic -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Traffic_Data_Analytic">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;analyses"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Traffic_Data"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Traffic_Flow -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Traffic_Flow"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Traffic_Flow_Analyser -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Traffic_Flow_Analyser">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;analyses"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Traffic_Flow"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Traffic_Flow_Characteristics -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Traffic_Flow_Characteristics"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Traffic_Flow_Optimisation -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Traffic_Flow_Optimisation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;optimises"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Traffic_Flow"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Traffic_Flow_data -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Traffic_Flow_data">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;studies"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Traffic_Condition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Traffic_Incident -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Traffic_Incident"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Traffic_Incident_Management -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Traffic_Incident_Management">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;respondsTo"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Traffic_Incident"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Traffic_Lane -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Traffic_Lane"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Traffic_Light -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Traffic_Light">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;utilises"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Traffic_Sensor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Traffic_Management_Controller -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Traffic_Management_Controller">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;coordinates"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Traffic_Flow"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Traffic_Management_System -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Traffic_Management_System">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;isApplicationOf"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Intelligent_Transportation_System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;utilises"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Historical_Data"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;utilises"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Real_Time_Data"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Traffic_Monitoring_Unit -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Traffic_Monitoring_Unit">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&IntelligentTrafficManagement;sends"/>
+                        <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Data"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&IntelligentTrafficManagement;to"/>
+                        <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Traffic_Management_Controller"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Traffic_Observation_Camera -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Traffic_Observation_Camera">
+        <rdfs:subClassOf rdf:resource="&IntelligentTrafficManagement;Camera"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;produces"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Video_Footage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;records"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Video_Footage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;produces"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Traffic_Data"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;monitors"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Traffic_Condition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Traffic_Pattern -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Traffic_Pattern">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;represents"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Traffic_Flow_Characteristics"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Traffic_Pattern_Analysis -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Traffic_Pattern_Analysis">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;analyses"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Traffic_Pattern"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Traffic_Sensor -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Traffic_Sensor">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;monitors"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Traffic_Condition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;produces"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Traffic_Data"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Traffic_Sign_Detection_Algorithm -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Traffic_Sign_Detection_Algorithm">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;identifies"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Traffic_sign"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;isUsedBy"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Video_Analysis_Software"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;utilises"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Video_Footage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Traffic_Signal_Synchronisation -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Traffic_Signal_Synchronisation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;synchronises"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Traffic_Light"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Traffic_Violation -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Traffic_Violation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Traffic_sign -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Traffic_sign"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Transit_Management_System -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Transit_Management_System">
+        <rdfs:subClassOf rdf:resource="&IntelligentTrafficManagement;Intelligent_Transportation_System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Transit_Signal_Priority -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Transit_Signal_Priority">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;isApplicationOf"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Intelligent_Transportation_System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Transport_Mode -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Transport_Mode"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Transportation_Planning_Tool -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Transportation_Planning_Tool">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;utilises"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Historical_Data"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Traveler_Information_Service -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Traveler_Information_Service">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;isApplicationOf"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Intelligent_Transportation_System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Vehicle -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Vehicle">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;equipped"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Dash_Camera"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;has"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Vehicle_Identification_Number"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;uses"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Traffic_Lane"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;mayLeadTo"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Vehicle_Breakdown"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;parkIn"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Parking_spot"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;has"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Licence_Plate"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Vehicle-to-Infrastructure_Communication -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Vehicle-to-Infrastructure_Communication">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&IntelligentTrafficManagement;exchanges"/>
+                        <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Data"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&IntelligentTrafficManagement;with"/>
+                        <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Infrastructure"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Vehicle_Breakdown -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Vehicle_Breakdown">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;mayLeadTo"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Traffic_Condition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Vehicle_Data_Collection -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Vehicle_Data_Collection">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;isApplicationOf"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Intelligent_Transportation_System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Vehicle_Detection_Algorithm -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Vehicle_Detection_Algorithm">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;utilises"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Video_Footage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;identifies"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Vehicle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;isUsedBy"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Video_Analysis_Software"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Vehicle_Identification_Number -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Vehicle_Identification_Number"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Vehicle_Proximity -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Vehicle_Proximity">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;detectedBy"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Vehicle_Proximity_Detection"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Vehicle_Proximity_Detection -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Vehicle_Proximity_Detection"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Vehicle_State_Data -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Vehicle_State_Data"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Video_Analysis_Software -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Video_Analysis_Software"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Video_Camera -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Video_Camera">
+        <rdfs:subClassOf rdf:resource="&IntelligentTrafficManagement;Camera"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;produces"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Video_Footage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Video_Footage -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Video_Footage"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Visualisation -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Visualisation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Visualisation_Library -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Visualisation_Library"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Visualisation_Platform -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Visualisation_Platform"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Waste_Collection -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Waste_Collection">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;utilises"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Route_Optimization_System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Weather_Condition -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Weather_Condition"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Weather_Forecasting_Model -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Weather_Forecasting_Model"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Weather_Sensor -->
+
+    <owl:Class rdf:about="&IntelligentTrafficManagement;Weather_Sensor">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IntelligentTrafficManagement;monitors"/>
+                <owl:someValuesFrom rdf:resource="&IntelligentTrafficManagement;Weather_Condition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#ALPR -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;ALPR">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Traffic_Observation_Camera"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#ANPR -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;ANPR">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Traffic_Observation_Camera"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#AVI -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;AVI">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Video_Footage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Accident_Notification -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Accident_Notification">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Notification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Aeronautical_Reconnaissance_Coverage_Geographic_Information_System -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Aeronautical_Reconnaissance_Coverage_Geographic_Information_System">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Geospatial_Analysis_Tool"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Amazon_Redshift -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Amazon_Redshift">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Data_Warehouse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Ambulance -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Ambulance">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Response_Vehicle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Ambulance_Dispatch_System -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Ambulance_Dispatch_System">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Emergency_Response"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Apache_Flink -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Apache_Flink">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Real-time_Data_Streaming_Tool"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Apache_Kafka -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Apache_Kafka">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Real-time_Data_Streaming_Tool"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Apache_Spark -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Apache_Spark">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Data_Processing_Tool"/>
+        <IntelligentTrafficManagement:process rdf:resource="&IntelligentTrafficManagement;Direction"/>
+        <IntelligentTrafficManagement:process rdf:resource="&IntelligentTrafficManagement;Distance"/>
+        <IntelligentTrafficManagement:process rdf:resource="&IntelligentTrafficManagement;Speed"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Apache_Storm -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Apache_Storm">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Real-time_Data_Streaming_Tool"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Bus -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Bus">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Vehicle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Chart -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Chart">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Visualisation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Colour-Based -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Colour-Based">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Traffic_Sign_Detection_Algorithm"/>
+        <IntelligentTrafficManagement:utilises rdf:resource="&IntelligentTrafficManagement;AVI"/>
+        <IntelligentTrafficManagement:utilises rdf:resource="&IntelligentTrafficManagement;MOV"/>
+        <IntelligentTrafficManagement:utilises rdf:resource="&IntelligentTrafficManagement;MP4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Compact_Camera -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Compact_Camera">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Video_Camera"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Congestion -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Congestion">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Traffic_Condition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Dashboard -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Dashboard">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Visualisation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Direction -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Direction">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Vehicle_State_Data"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Distance -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Distance">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Vehicle_State_Data"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Dynamic_Routing_Algorithm -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Dynamic_Routing_Algorithm">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Route_Optimisation_Algorithm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Exact_Algorithm -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Exact_Algorithm">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Route_Optimisation_Algorithm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Fire_Alert_System -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Fire_Alert_System">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Emergency_Response"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Fire_Truck -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Fire_Truck">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Response_Vehicle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Fog -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Fog">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Weather_Condition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Free_Flow -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Free_Flow">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Traffic_Condition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Google_BigQuery -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Google_BigQuery">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Data_Warehouse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Google_Data_Studio -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Google_Data_Studio">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Visualisation_Platform"/>
+        <IntelligentTrafficManagement:displays rdf:resource="&IntelligentTrafficManagement;speed_measurements"/>
+        <IntelligentTrafficManagement:displays rdf:resource="&IntelligentTrafficManagement;travel_times"/>
+        <IntelligentTrafficManagement:displays rdf:resource="&IntelligentTrafficManagement;vehicle_counts"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Grafana -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Grafana">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Visualisation_Platform"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Graph -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Graph">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Visualisation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Gridlock -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Gridlock">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Traffic_Condition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Hail -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Hail">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Weather_Condition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Heuristic_Algorithm -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Heuristic_Algorithm">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Route_Optimisation_Algorithm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Hybrid_Algorithm -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Hybrid_Algorithm">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Route_Optimisation_Algorithm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#LPR -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;LPR">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Traffic_Observation_Camera"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#MOV -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;MOV">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Video_Footage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#MP4 -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;MP4">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Video_Footage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Machine_Learning-Based -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Machine_Learning-Based">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Traffic_Sign_Detection_Algorithm"/>
+        <IntelligentTrafficManagement:utilises rdf:resource="&IntelligentTrafficManagement;AVI"/>
+        <IntelligentTrafficManagement:utilises rdf:resource="&IntelligentTrafficManagement;MOV"/>
+        <IntelligentTrafficManagement:utilises rdf:resource="&IntelligentTrafficManagement;MP4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Metabase -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Metabase">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Visualisation_Platform"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Metaheuristic_Algorithm -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Metaheuristic_Algorithm">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Route_Optimisation_Algorithm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Microclimate_Sensor -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Microclimate_Sensor">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Environmental_Sensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Motorcycle -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Motorcycle">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Vehicle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#National_Data_Warehouse_For_Traffic_Information -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;National_Data_Warehouse_For_Traffic_Information">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Data_Warehouse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Police_Car -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Police_Car">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Response_Vehicle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Police_Disatch_System -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Police_Disatch_System">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Emergency_Response"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Positioning_System_Exhange_Format -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Positioning_System_Exhange_Format">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Global_Positioning_System_Location_Data"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Power_Bi -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Power_Bi">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Visualisation_Platform"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Python_Pandas -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Python_Pandas">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Data_Processing_Tool"/>
+        <IntelligentTrafficManagement:process rdf:resource="&IntelligentTrafficManagement;Direction"/>
+        <IntelligentTrafficManagement:process rdf:resource="&IntelligentTrafficManagement;Distance"/>
+        <IntelligentTrafficManagement:process rdf:resource="&IntelligentTrafficManagement;Speed"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Quantum_Geographic_Information_System -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Quantum_Geographic_Information_System">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Geospatial_Analysis_Tool"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Rain -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Rain">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Weather_Condition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Real_TIme_Routing_Algorithm -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Real_TIme_Routing_Algorithm">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Route_Optimisation_Algorithm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Shape-Based -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Shape-Based">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Traffic_Sign_Detection_Algorithm"/>
+        <IntelligentTrafficManagement:utilises rdf:resource="&IntelligentTrafficManagement;AVI"/>
+        <IntelligentTrafficManagement:utilises rdf:resource="&IntelligentTrafficManagement;MOV"/>
+        <IntelligentTrafficManagement:utilises rdf:resource="&IntelligentTrafficManagement;MP4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Single_Lens_DashCam -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Single_Lens_DashCam">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Dash_Camera"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Snow -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Snow">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Weather_Condition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Speed -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Speed">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Vehicle_State_Data"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Tableau -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Tableau">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Visualisation_Platform"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Thunderstorm -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Thunderstorm">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Weather_Condition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#Traffic_Notification -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;Traffic_Notification">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Notification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#speed_measurements -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;speed_measurements">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Traffic_Data"/>
+        <IntelligentTrafficManagement:storedIn rdf:resource="&IntelligentTrafficManagement;Amazon_Redshift"/>
+        <IntelligentTrafficManagement:storedIn rdf:resource="&IntelligentTrafficManagement;Google_BigQuery"/>
+        <IntelligentTrafficManagement:storedIn rdf:resource="&IntelligentTrafficManagement;National_Data_Warehouse_For_Traffic_Information"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#travel_times -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;travel_times">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Traffic_Data"/>
+        <IntelligentTrafficManagement:storedIn rdf:resource="&IntelligentTrafficManagement;Amazon_Redshift"/>
+        <IntelligentTrafficManagement:storedIn rdf:resource="&IntelligentTrafficManagement;Google_BigQuery"/>
+        <IntelligentTrafficManagement:storedIn rdf:resource="&IntelligentTrafficManagement;National_Data_Warehouse_For_Traffic_Information"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2024/5/IntelligentTrafficManagement#vehicle_counts -->
+
+    <owl:NamedIndividual rdf:about="&IntelligentTrafficManagement;vehicle_counts">
+        <rdf:type rdf:resource="&IntelligentTrafficManagement;Traffic_Data"/>
+        <IntelligentTrafficManagement:storedIn rdf:resource="&IntelligentTrafficManagement;Amazon_Redshift"/>
+        <IntelligentTrafficManagement:storedIn rdf:resource="&IntelligentTrafficManagement;Google_BigQuery"/>
+        <IntelligentTrafficManagement:storedIn rdf:resource="&IntelligentTrafficManagement;National_Data_Warehouse_For_Traffic_Information"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
